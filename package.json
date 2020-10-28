@@ -1,7 +1,14 @@
 {
-  "name": "my-app",
+  "name": "reactron-template-with-typescript",
   "version": "0.1.0",
+  "description": "template for 5circles",
+  "author": "5 Circles",
   "private": true,
+  "devDependencies": {
+    "electron": "^10.1.5",
+    "electron-builder": "^22.9.1",
+    "foreman": "^3.0.1"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -20,7 +27,15 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "electron-dev": "set ELECTRON_START_URL=http://localhost:3000 && electron",
+    "electron": "electron .",
+    "dev": "nf start -p 3000",
+    "pack": "electron-builder --dir",
+    "prepack": "react-scripts build",
+    "dist": "electron-builder",
+    "predist" : "react-scripts build",
+    "postinstall": "electron-builder install-app-deps"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +54,26 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },  
+  "homepage": "./",
+  "main": "public/electron.js",  
+  "build": {
+    "appId": "com.example.electron-cra",
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "dmg": {
+      "backgroundColor": "#ffff00"
+    },
+    "files": [
+      "build/**/*",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    }
   }
 }

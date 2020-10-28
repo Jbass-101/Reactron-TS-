@@ -1,10 +1,10 @@
-# Getting Started with Create React App
+# Reactron 5circles Template
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Template for creating elctron apps with React Library :) Happy Coding
 
-## Available Scripts
+### `yarn install`
 
-In the project directory, you can run:
+Install all dependencies
 
 ### `yarn start`
 
@@ -17,7 +17,6 @@ You will also see any lint errors in the console.
 ### `yarn test`
 
 Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `yarn build`
 
@@ -26,8 +25,6 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `yarn eject`
 
@@ -39,8 +36,28 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### `yarn run electron`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Runs the react app in development
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### `yarn run dev`
+
+Runs the elecrton app with live server and reload on changes
+
+### `yarn`
+
+Packages the app
+
+### `yarn dist`
+
+builds the electron app for deployment
+
+### To change build configuration
+
+https://www.electron.build/configuration/configuration
+
+### Electron configuration
+
+Electron config will be found in public/elecron.js and public/electron-wait-react
+
+Procfile config for electron to run with react
