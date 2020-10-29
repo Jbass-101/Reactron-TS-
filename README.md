@@ -1,4 +1,4 @@
-# Reactron 5circles Template
+# 🚀 Reactron 5circles Template 🏆
 
 Template for creating elctron apps with React Library :) Happy Coding
 
@@ -44,7 +44,7 @@ Runs the react app in development
 
 Runs the elecrton app with live server and reload on changes
 
-### `yarn`
+### `yarn pack`
 
 Packages the app
 
@@ -52,11 +52,11 @@ Packages the app
 
 builds the electron app for deployment
 
-### To change build configuration
+### `To change build configuration`
 
 https://www.electron.build/configuration/configuration
 
-### Electron configuration
+### `Electron configuration`
 
 Electron config will be found in public/elecron.js and public/electron-wait-react
 
